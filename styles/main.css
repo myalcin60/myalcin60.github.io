@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital@1&family=PT+Sans&family=Rubik+Doodle+Shadow&family=Sevillana&display=swap");
+
+:root {
+  --primary: #141d3a;
+  --secondary: #5e7ebe;
+  --third: #e0f6f6;
+  --fourth: #e9f0f2;
+  --fifth: #f07245;
+}
+* {
+  box-sizing: border-box;
+  font-family: Audiowide;
+}
+html {
+  background-color: var(--third);
+}
+.container {
+  width: 100 vw;
+  height: 100vh;
+}
+.headerContainer {
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 1px;
+}
+.image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+.titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.icons i {
+  font-size: 30px;
+}
+.bodyContainer {
+  height: 60%;
+  display: flex;
+}
+.menu {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid var(--primary);
+  justify-content: space-around;
+  align-items: center;
+}
+.content {
+  width: 75%;
+
+}
+.menu > a {
+  text-decoration: none;
+}
+.menu > a:hover{
+  color: var(--fifth);
+}
+.footerContainer {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
