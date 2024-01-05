@@ -1,59 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Nunito:ital@1&family=PT+Sans&family=Rubik+Doodle+Shadow&family=Sevillana&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:ital@1&family=Open+Sans&family=PT+Sans&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&family=Sevillana&display=swap');
 :root {
   --primary: #141d3a;
-  --secondary: #5e7ebe;
-  --third: #e0f6f6;
-  --fourth: #e9f0f2;
-  --fifth: #f07245;
+  --secondary: #0b2b6c;
+  --third: #f9f1e3;
+  --fourth: #f3f5f6;
+  --fifth: #d24613;
 }
 * {
   box-sizing: border-box;
-  font-family: Audiowide;
+  font-family: Montserrat;
 }
 html {
-  background-color: var(--third);
+  background-color: var(--fourth);
 }
 .container {
   width: 100 vw;
   height: 100vh;
 }
 .headerContainer {
-  height: 30%;
+  height: 20%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 20px;
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 4px solid var(--fifth);
   padding-bottom: 1px;
+  background-color: var(--secondary);
+  color: var(--fifth);
+  font-size:xx-large;
+}
+.profil{
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 .image {
-  width: 150px;
-  height: auto;
   border-radius: 50%;
+  border-color: 10px var(--fifth);
 }
 .titre {
+  width: 55%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: large;
+  padding-left: 3%;
 }
 .icons {
+  width: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: end;
+  padding-right: 3%;
+  
 }
 .icons i {
   font-size: 30px;
+  color: var(--fifth);
 }
 .bodyContainer {
-  height: 60%;
+  height: 70%;
   display: flex;
 }
 .menu {
-  width: 25%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   border-right: 2px solid var(--primary);
@@ -61,16 +73,22 @@ html {
   align-items: center;
 }
 .content {
-  width: 75%;
-
+  width:80%;
+  padding-bottom: 32%;
+}
+.content > h1{
+  text-align: center;
+  color:var(--fifth);
+  width: 80%;
 }
 .menu > a {
   text-decoration: none;
 }
-.menu > a:hover{
+.menu > a:hover {
   color: var(--fifth);
 }
 .footerContainer {
+  border-top:1px solid var(--primary);
   height: 10%;
   display: flex;
   align-items: center;
