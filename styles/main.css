@@ -1,127 +1,155 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:ital@1&family=Open+Sans&family=PT+Sans&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&family=Sevillana&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Instrument+Serif:ital@1&family=Montserrat:wght@500&family=Nunito:ital@1&family=Open+Sans&family=PT+Sans&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&family=Sevillana&display=swap');
+
 :root {
-  --primary: #141d3a;
+  --primary: #101b40;
   --secondary: #0b2b6c;
-  --third: #f9f1e3;
-  --fourth: #f3f5f6;
-  --fifth: #f16735;
+  --third: #f68206e8;
+  --fourth: #ffffff;
+  --fifth: #d24613;
 }
 * {
   box-sizing: border-box;
-  font-family: Montserrat;
+  font-family: Instrument Serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
 }
 html {
   background-color: var(--fourth);
 }
-.container {
-  width: 100 vw;
-  height: 100vh;
+body {
+  margin: 0;
+  overflow-x: hidden; /* Yatay scrollbar'ı gizle */
+  overflow-y: auto; /* Dikey scrollbar'ı sürdür */
 }
-.headerContainer {
-  height: 20%;
+
+header {
+  width: 100vw;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.header {
+  width: auto;
+  height: 5%;
+  border-bottom: 3px solid var(--third);
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-  border-bottom: 4px solid var(--fifth);
-  padding-bottom: 1px;
-  background-color: var(--secondary);
-  color: var(--fifth);
-}
-.profil {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-}
-.image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  border-color: 10px var(--fifth);
-}
-.titre {
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 3%;
-}
-.icons {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: end;
-  padding-right: 3%;
-}
-.icons i {
-  font-size: 30px;
-  color: var(--fifth);
-}
-.bodyContainer {
-  height: 70%;
-  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary);
 }
 .menu {
-  width: 20%;
+  width: 78%;
   display: flex;
-  flex-direction: column;
-  border-right: 2px solid var(--primary);
-  justify-content: space-around;
-  align-items: center;
-}
-.content {
-  width: 80%;
-  padding-bottom: 32%;
-}
-.content > h1 {
-  text-align: center;
-  color: var(--fifth);
-  width: 80%;
+  display: flex;
+  justify-content: right;
 }
 .menu > a {
+  color: var(--fourth);
+  padding-left: 5%;
   text-decoration: none;
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s;
 }
 .menu > a:hover {
   color: var(--fifth);
 }
-.footerContainer {
-  height: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-h1 {
-  font-size: 2em; /* Başlık boyutunu belirleyin */
-  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
-}
-h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.5em; /* Başlık boyutunu belirleyin */
-  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
+.text > p :hover{
   color: var(--fifth);
 }
-p {
-  font-size: 1em; /* Başlık boyutunu belirleyin */
+.icons {
+  width: 10%;
+  display: flex;
+  justify-content: right;
+  margin-right: 3%;
+}
+.icons > a {
+  color: var(--fourth);
+  padding-left: 5%;
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  margin-left: 1%;
+  
+}
+.image{
+  
+  margin: 3%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.image > p {
+  font-size: 1.1em; /* Başlık boyutunu belirleyin */
   transition: font-size 0.3s;
-  text-indent: 20px;
-  margin: 20px;
+  margin: 1%;
+}
+.image > img{
+  max-width: 100%;
+  width: 10%;
+}
+
+.hi {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
+}
+.text {
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
+}
+.body{ 
+  width: auto;
+  max-width:100%;
+  height: auto;
+}
+.picture {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 45%;
 }
 @media (max-width: 600px) {
-  h1 {
-    font-size: 1.5em; /* Ekran küçüldükçe başlık boyutunu küçültün */
-  }
-  h2 {
-    font-size: 0.9em; /* Ekran küçüldükçe başlık boyutunu küçültün */
-  }
-  .image {
+  .picture {
     max-width: 50%;
+  
   }
-
-  p {
+  .hi {
+    font-size: 0.7em; /* Ekran küçüldükçe başlık boyutunu küçültün */
+  }
+  .text{
     font-size: 0.7em;
   }
+  .body{
+    width:50% ;
+  }
+  .menu > a {
+    font-size: 0.7em;
+  }
+  .icons > a {
+    font-size: 0.7em;
+  }
+  .image{
+    width: 300%;
+  }
+  .image > img{
+    Width: 25%
+  }
+  .image > p {
+    font-size: 0.7em;
+  }
+  
 }
