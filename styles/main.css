@@ -75,8 +75,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5%;
-  margin-left: 1%;
+  width: 9dvh;
+  margin-left:0.3%;
   
 }
 .image{
@@ -86,6 +86,8 @@ header {
   max-width: 100%;
   height: auto;
 }
+
+
 .image > p {
   font-size: 1.1em; /* Başlık boyutunu belirleyin */
   transition: font-size 0.3s;
@@ -151,5 +153,6 @@ header {
   .image > p {
     font-size: 0.7em;
   }
+
   
 }
