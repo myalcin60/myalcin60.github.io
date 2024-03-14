@@ -37,7 +37,7 @@ header {
   border-bottom: 3px solid var(--third);
   display: flex;
   align-items: end;
-  justify-content: space-between;
+  justify-content:space-between;
   background-color: var(--secondary);
 }
 .menu {
@@ -59,7 +59,23 @@ header {
 .text > p :hover{
   color: var(--fifth);
 }
+.language{
+  width: 78%;
+  display: flex;
+  display: flex;
+  justify-content: right;
+ position: absolute;
+ right: 30%;
+}
+.language > a{
+  padding: 2px;  
+  color:var(--fourth);
+}
+.language > a:hover {
+  color: var(--fifth);
+}
 .icons {
+ 
   width: 10%;
   display: flex;
   justify-content: right;
@@ -124,7 +140,14 @@ header {
   top: 40%;
   left: 45%;
 }
+
 @media (max-width: 600px) {
+  .language{
+    max-width: 50%;
+  }
+  .language>a{
+    font-size: 0.7em; 
+  }
   .picture {
     max-width: 50%;
   
