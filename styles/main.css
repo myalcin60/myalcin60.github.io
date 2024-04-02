@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Instrument+Serif:ital@1&family=Montserrat:wght@500&family=Nunito:ital@1&family=Open+Sans&family=PT+Sans&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&family=Sevillana&display=swap');
+
+:root {
+  --primary: #101b40;
+  --secondary: #0b2b6c;
+  --third: #f68206e8;
+  --fourth: #ffffff;
+  --fifth: #d24613;
+}
+* {
+  box-sizing: border-box;
+  font-family: Instrument Serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+html {
+  background-color: var(--fourth);
+}
+body {
+  margin: 0;
+  overflow-x: hidden; /* Yatay scrollbar'ı gizle */
+  overflow-y: auto; /* Dikey scrollbar'ı sürdür */
+}
+
+header {
+  width: 100vw;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.header {
+  width: auto;
+  height: 5%;
+  border-bottom: 3px solid var(--third);
+  display: flex;
+  align-items: end;
+  justify-content:space-between;
+  background-color: var(--secondary);
+}
+.menu {
+  width: 78%;
+  display: flex;
+  justify-content: right;
+}
+.menu > a {
+  color: var(--fourth);
+  padding-left: 5%;
+  text-decoration: none;
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s;
+}
+.menu > a:hover {
+  color: var(--fifth);
+}
+.text > p :hover{
+  color: var(--fifth);
+}
+.language{
+  width: 78%;
+  display: flex;
+  justify-content: right;
+ position: absolute;
+ right: 30%;
+}
+.language > a{
+  padding: 2px;  
+  color:var(--fourth);
+}
+.language > a:hover {
+  color: var(--fifth);
+}
+.icons {
+ 
+  width: 10%;
+  display: flex;
+  justify-content: right;
+  margin-right: 3%;
+}
+.icons > a {
+  color: var(--fourth);
+  padding-left: 5%;
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9dvh;
+  margin-left:0.3%;
+  
+}
+.image{
+  
+  margin: 3%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.image > p {
+  font-size: 1.1em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s;
+  margin: 1%;
+}
+.image > img{
+  max-width: 100%;
+  width: 10%;
+}
+
+
+.hi {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
+}
+.text {
+  position: absolute;
+  top: 35%;
+  left: 32%;
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
+}
+.body{ 
+  width: auto;
+  max-width:100%;
+  height: auto;
+}
+.picture {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+@media (max-width: 600px) {
+  .language{
+    max-width: 50%;
+  }
+  .language>a{
+    font-size: 0.7em; 
+  }
+  .picture {
+    max-width: 50%;
+  
+  }
+  .hi {
+    font-size: 0.7em; /* Ekran küçüldükçe başlık boyutunu küçültün */
+  }
+  .text{
+    font-size: 0.7em;
+  }
+  .body{
+    width:50% ;
+  }
+  .menu > a {
+    font-size: 0.7em;
+  }
+  .icons > a {
+    font-size: 0.7em;
+  }
+  .image{
+    width: 300%;
+  }
+  .image > img{
+    Width: 25%
+  }
+  .image > p {
+    font-size: 0.7em;
+  }
+  .box{
+    width: 50%;
+    
+  }
+  .efc{
+    width: 50%;
+    font-size: 0.5em;
+  }
+  .efc > h2{
+    padding-left: 4%;
+  }
+  .efc > p{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .pro_1{
+    font-size: 0.7em;
+  }
+
+  
+}
+.pro_1{
+  font-size: 1.2em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
+  width: 75%;
+  margin-left: 5%;
+}
+.pro_1 > p {
+  font-weight: bold;
+}
+.project > h2{
+margin-left: 5%;
+text-decoration: underline;
+color:var(--fifth);
+}
+.box{
+  width: auto;
+  max-width:100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+.efc{
+  font-size: 1 em; /* Başlık boyutunu belirleyin */
+  transition: font-size 0.2s; /* Geçiş efektini ekleyin */
+  max-width: 100%;
+  flex: 1; /* Eşit genişlikte olmasını sağlar, istediğiniz genişliği ayarlayabilirsiniz */
+  margin: 10px; /* İstediğiniz boşluğu ayarlayabilirsiniz */
+  background-color: white; /* Kutunun arka plan rengini ayarlar */
+  border-radius: 10px;
+}
+.efc > h2{
+  padding-left: 4%;
+}
+.efc > p{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
