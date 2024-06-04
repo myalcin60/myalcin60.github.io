@@ -5,7 +5,7 @@
   --secondary: #0b2b6c;
   --third: #f68206e8;
   --fourth: #ffffff;
-  --fifth: #d24613;
+  --fifth: #e84c14;
 }
 * {
   box-sizing: border-box;
@@ -158,7 +158,8 @@ header {
     font-size: 0.7em;
   }
   .body{
-    width:50% ;
+    width:100% ;
+  
   }
   .menu > a {
     font-size: 0.7em;
@@ -190,26 +191,79 @@ header {
     padding-left: 4%;
     padding-right: 4%;
   }
-  .pro_1{
+  .pro{
     font-size: 0.7em;
+  }
+  .container-project{
+    max-width: 50%;
+    font-size: 0.7em;
+  }
+  .description-box{
+    max-width: 50%;
+    font-size: 0.6em;
   }
 
   
 }
-.pro_1{
-  font-size: 1.2em; /* Başlık boyutunu belirleyin */
-  transition: font-size 0.3s; /* Geçiş efektini ekleyin */
-  width: 75%;
-  margin-left: 5%;
+h2 {
+  color:var(--fifth);
+  margin-left:15%;
 }
-.pro_1 > p {
+
+.container-project {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around; /* Projeleri sola hizalamak için */
+  flex-wrap: wrap; /* Projelerin satır satır yerleşmesini sağlar */
+  padding: 10px;
+
+}
+.pro {
+ max-width: 100%;
+  height: auto;
+  margin: 1%;
+  padding: 5%;
+  background-color: var(--third);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  color:var(--fourth);
   font-weight: bold;
+  border-radius: 5%;
+  font-size: 1.4em;
 }
-.project > h2{
-margin-left: 5%;
-text-decoration: underline;
-color:var(--fifth);
+.description-box {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    background-color: var(--fourth);
+    display: none;
+    font-size: 1em;
+    color:var(--primary);
+   
+    
 }
+.description-box p {
+  margin: 0.5em; /* Paragraf aralıklarını ayarlamak için */
+}
+/* :target pseudo-class ile görünürlüğü ayarla */
+#proj1:target,
+#proj2:target
+{
+    display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+
 .box{
   width: auto;
   max-width:100%;
