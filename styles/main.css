@@ -221,20 +221,31 @@ h2 {
 }
 .pro {
  max-width: 100%;
-  height: auto;
   margin: 1%;
-  padding: 5%;
-  background-color: var(--third);
+  padding: 5%; 
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   text-decoration: none;
-  color:var(--fourth);
   font-weight: bold;
+  font-size: 1.5em;
+  background-color: var(--fourth);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  color:transparent;
+  border:solid 1px #e84c14;
   border-radius: 5%;
-  font-size: 1.4em;
 }
+#proj1-link {
+  background-image: url(../assets/PickBazar.png); /* Replace with your image path */
+}
+#proj2-link {
+  background-image: url(../assets/nioyatech.png); /* Replace with your image path */
+}
+
 .description-box {
   margin-top: 2%;
   margin-left: 5%;
