@@ -139,6 +139,50 @@ header {
   top: 40%;
   left: 45%;
 }
+.content {
+  padding: 20px;
+  background-color: #fff;
+}
+.slider {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+ 
+
+}
+
+.slide {
+  min-width: 50%; /* 2 resim görünecek */
+
+}
+
+.slide img {
+  width: 80%;
+  height: auto;
+  display: block;
+  padding: 5px;
+  margin: 0 auto; /* Ortalamak ici*/
+  border: solid 1px var(--third);
+}
+/* Kayma animasyonu */
+@keyframes slide {
+  0%   { transform: translateX(0%); }      /* 1-2 */
+  20%  { transform: translateX(-20%); }    /* 2-3 */
+  40%  { transform: translateX(-40%); }    /* 3-4 */
+  60%  { transform: translateX(-60%); }    /* 4-1 */
+  80%  { transform: translateX(-80%); }    /* 1-2 (Tekrar başa dönüyor) */
+  100% { transform: translateX(0%); }      /* Döngü başa sarıyor */
+}
 
 @media (max-width: 600px) {
   .language{
