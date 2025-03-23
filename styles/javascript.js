@@ -27,5 +27,28 @@ document.addEventListener("DOMContentLoaded", () => {
       slides.style.transition = "transform 0.5s ease-in-out"; // Yavaş geçiş
       slides.style.transform = `translateX(-${index * 50}%)`; // Kaydırma
     }
-    setInterval(showNextSlides, 3000);
+    setInterval(showNextSlides, 2000);
   });
+
+  const popup = document.getElementById("image-popup");
+const popupImg = document.getElementById("popup-img");
+const popupClose = document.getElementById("popup-close");
+
+document.querySelectorAll(".slide img").forEach(img => {
+  img.addEventListener("click", () => {
+    popupImg.src = img.src;
+    popup.style.display = "flex";
+  });
+});
+
+popupClose.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+// Popup dışına tıklanınca kapansın
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});
+
