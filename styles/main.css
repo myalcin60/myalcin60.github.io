@@ -26,6 +26,7 @@ body {
 
 header {
   width: 100vw;
+  
   background-color: #333;
   color: white;
   text-align: center;
@@ -33,13 +34,18 @@ header {
 }
 .header {
   width: auto;
-  height: 5%;
+  height: 6%;
   border-bottom: 3px solid var(--third);
   display: flex;
   align-items: end;
   justify-content:space-between;
   background-color: var(--secondary);
+  
 }
+.body{
+  margin: 1%;
+}
+
 .menu {
   width: 78%;
   display: flex;
@@ -86,13 +92,14 @@ header {
   transition: font-size 0.3s; /* Geçiş efektini ekleyin */
 }
 .logo {
+  width: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 9dvh;
-  margin-left:0.3%;
+  margin-left:2%;
   
 }
+
 .image{
   
   margin: 3%;
